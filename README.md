@@ -1,5 +1,9 @@
 ## ps-screen
 
+```sh
+$ pip install ps-screen
+```
+
 `ps-screen` shows a list of the running screen and tmux sessions, along with
 their current working directories and the command at the bottom of their
 process tree, like so:
