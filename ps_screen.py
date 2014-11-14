@@ -77,7 +77,8 @@ def table_row(process, full=False):
 
 
 @click.command()
-@click.option('--full/--compact', is_flag=True, default=False)
+@click.option('--full/--compact', is_flag=True, default=False,
+              help='full output lists a full subprocess tree')
 def ps_screen(full=False):
     screens = [p for p in psutil.process_iter()
                if p.name() in ['screen', 'tmux']]
