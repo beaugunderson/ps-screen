@@ -7,6 +7,7 @@ setup(
     author_email='beau@beaugunderson.com',
     url='https://github.com/beaugunderson/ps-screen',
     description="List screen and tmux sessions and what's running in them.",
+    long_description=open('README.md').read(),
     license='BSD',
     keywords='utility ps screen tmux',
     classifiers=[
@@ -22,6 +23,7 @@ setup(
         'Programming Language :: Python',
         'Topic :: Utilities',
     ],
+    py_modules=['ps_screen'],
     entry_points={
         'console_scripts': [
             'ps-screen = ps_screen:ps_screen',
