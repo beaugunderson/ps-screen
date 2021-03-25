@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='ps-screen',
-    version='1.0.2',
+    version='1.0.3',
     author='Beau Gunderson',
     author_email='beau@beaugunderson.com',
     url='https://github.com/beaugunderson/ps-screen',
