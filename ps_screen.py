@@ -56,7 +56,12 @@ def print_child(p, depth=1, columns=0):
 
 
 def last_cmd(p):
-    return ' '.join(p.children(recursive=True)[-1].cmdline())
+    children = p.children(recursive=True)
+
+    if children:
+        return ' '.join(children[-1].cmdline())
+
+    return ''
 
 
 def format_name(name):
